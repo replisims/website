@@ -5,3 +5,6 @@ theme = "learn"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
+[params]
+themeVariant = "mine"
