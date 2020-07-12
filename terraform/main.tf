@@ -1,4 +1,5 @@
 #####  Plugins and versions
+
 terraform {
   required_version = "~> 0.12.16"
 
@@ -13,6 +14,7 @@ provider "aws" {
 
 
 #####  Global locals
+
 locals {
   project = "replisims"
   local_prefix  = "${local.project}-${var.environment}"
@@ -30,30 +32,21 @@ locals {
 
 resource "aws_s3_bucket" "website" {
   bucket = "${local.global_prefix}-website"
-
   tags = local.tags
-
-  website {
-    index_document = "index.html"
-    error_document = "error.html"
-  }
 }
 
+resource "aws_cloudfront_origin_access_identity" "website" {
+  comment = "CloudFront OAI for website bucket"
+}
 data "aws_iam_policy_document" "website_bucket" {
   statement {
-    sid = "AllowPublicRead"
+    sid = "AllowReadByCloudFront"
     principals {
       type        = "AWS"
-      identifiers = ["*"]
+      identifiers = [aws_cloudfront_origin_access_identity.website.iam_arn]
     }
-    resources = [
-      aws_s3_bucket.website.arn,
-      "${aws_s3_bucket.website.arn}/*",
-    ]
-    actions = [
-      "s3:Get*",
-      "s3:List*",
-    ]
+    resources = ["${aws_s3_bucket.website.arn}/*"]
+    actions = ["s3:GetObject"]
     condition {
       test     = "Bool"
       variable = "aws:SecureTransport"
