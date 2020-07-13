@@ -10,13 +10,13 @@ home = ["HTML", "RSS", "JSON"]
 themeVariant = "mine"
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-github'></i> Github Organization"
+name = "<i class='fab fa-github'></i>&nbsp;Github Organization"
 identifier = "github"
 url = "https://github.com/replisims"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fab fa-gitter'></i> Gitter community"
+name = "<i class='fab fa-gitter'></i>&nbsp; Gitter community"
 identifier = "gitter"
 url = "https://gitter.im/replisims/community"
 weight = 20

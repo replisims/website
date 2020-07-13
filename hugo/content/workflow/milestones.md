@@ -55,4 +55,3 @@ Furthermore, replicator degrees of freedom i.e. any decisions that had to be mad
 You can get a doi for your endproduct via zenodo and add your part to the project's zenodo community:  
 https://zenodo.org/communities/replisims/
 
-<iframe src="https://zenodo.org/communities/codecheck". ,</iframe>
