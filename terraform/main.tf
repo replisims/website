@@ -60,4 +60,65 @@ resource "aws_s3_bucket_policy" "website" {
 }
 
 
+#####  Website
+
+resource "aws_cloudfront_distribution" "website" {
+  enabled         = true
+  is_ipv6_enabled = true
+
+  tags    = local.tags
+
+  # aliases = [var.domain]
+
+  origin {
+    origin_id   = "bucket-${aws_s3_bucket.website.id}"
+    domain_name = aws_s3_bucket.website.bucket_regional_domain_name
+
+    s3_origin_config {
+      origin_access_identity = aws_cloudfront_origin_access_identity.website.cloudfront_access_identity_path
+    }
+  }
+
+  default_root_object = "index.html"
+
+  custom_error_response {
+    error_code            = "404"
+    error_caching_min_ttl = "60"
+    response_page_path    = "/404.html"
+  }
+
+  default_cache_behavior {
+    target_origin_id = "bucket-${aws_s3_bucket.website.id}"
+
+    allowed_methods = ["GET", "HEAD"]
+    cached_methods  = ["GET", "HEAD"]
+
+    forwarded_values {
+      query_string = true
+      cookies {
+        forward = "all"
+      }
+    }
+
+    default_ttl      = "60"
+    max_ttl          = "3600"
+
+    viewer_protocol_policy = "redirect-to-https"
+    compress               = true
+  }
+
+  restrictions {
+    geo_restriction {
+      restriction_type = "none"
+    }
+  }
+
+  viewer_certificate {
+    # TODO domain cert
+    cloudfront_default_certificate = true
+    ssl_support_method       = "sni-only"
+  }
+}
+
+
 #####  DNS
