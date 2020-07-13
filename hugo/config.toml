@@ -1,0 +1,22 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "RepliSims Project"
+theme = "learn"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+themeVariant = "mine"
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github Organization"
+identifier = "github"
+url = "https://github.com/replisims"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-gitter'></i> Gitter community"
+identifier = "gitter"
+url = "https://gitter.im/replisims/community"
+weight = 20
