@@ -52,7 +52,7 @@ Depending on your time, current skill-level and enthusiasm and the different com
 
 
 
-> Check out the [resources section](#resources) to explore the options.
+> Check out the [resources section](/resources) to explore the options.
 
 ## Out of scope
 - Criticising the author's approach
