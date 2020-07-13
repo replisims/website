@@ -197,6 +197,15 @@ resource "aws_route53_record" "website_root_ip6" {
   }
 }
 
+resource "aws_route53_record" "website_www" {
+  zone_id = local.project_domain_hosted_zone_id
+  name    = "www.${local.project_domain}"
+  type    = "CNAME"
+
+  records = [local.project_domain]
+  ttl     = 900
+}
+
 
 #####  SSL
 
