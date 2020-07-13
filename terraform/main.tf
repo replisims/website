@@ -110,7 +110,7 @@ resource "aws_cloudfront_distribution" "website" {
 
   origin {
     origin_id   = "bucket-${aws_s3_bucket.website.id}"
-    domain_name = aws_s3_bucket.website.website_domain
+    domain_name = aws_s3_bucket.website.website_endpoint
 
     custom_header {
       name  = "Referer"
