@@ -78,15 +78,9 @@ data "aws_iam_policy_document" "website_bucket" {
     ]
     condition {
       test     = "Bool"
-      variable = "aws:SecureTransport"
-      values   = [true]
+      variable = "aws:Referer"
+      values   = [random_password.website_bucket_referer.result]
     }
-    # TODO re-enable
-    # condition {
-    #   test     = "Bool"
-    #   variable = "aws:Referer"
-    #   values   = [random_password.website_bucket_referer.result]
-    # }
   }
 }
 resource "aws_s3_bucket_policy" "website" {
@@ -115,10 +109,10 @@ resource "aws_cloudfront_distribution" "website" {
     }
 
     custom_origin_config {
-      origin_protocol_policy = "https-only"
+      origin_protocol_policy = "http-only"
       http_port              = "80"
       https_port             = "443"
-      origin_ssl_protocols   = ["TLSv1.2", "TLSv1"]
+      origin_ssl_protocols   = ["TLSv1"]
     }
   }
 
