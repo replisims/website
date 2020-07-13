@@ -5,12 +5,15 @@ terraform {
 
   required_providers {
     aws      = "~> 2.55"
+    random   = "~> 2.2"
   }
 }
 
 provider "aws" {
   region = "eu-west-1"
 }
+
+provider "random" {}
 
 
 #####  Global locals
@@ -32,18 +35,25 @@ locals {
 
 resource "aws_s3_bucket" "website" {
   bucket = "${local.global_prefix}-website"
+
   tags = local.tags
+
+  website {
+    index_document = "index.html"
+    error_document = "404.html"
+  }
 }
 
-resource "aws_cloudfront_origin_access_identity" "website" {
-  comment = "CloudFront OAI for website bucket"
+resource "random_password" "website_bucket_referer" {
+  length  = 20
+  special = false
 }
 data "aws_iam_policy_document" "website_bucket" {
   statement {
     sid = "AllowReadByCloudFront"
     principals {
       type        = "AWS"
-      identifiers = [aws_cloudfront_origin_access_identity.website.iam_arn]
+      identifiers = ["*"]
     }
     resources = [
       aws_s3_bucket.website.arn,
@@ -57,6 +67,11 @@ data "aws_iam_policy_document" "website_bucket" {
       test     = "Bool"
       variable = "aws:SecureTransport"
       values   = [true]
+    }
+    condition {
+      test     = "Bool"
+      variable = "aws:Referer"
+      values   = [random_password.website_bucket_referer.result]
     }
   }
 }
@@ -78,10 +93,11 @@ resource "aws_cloudfront_distribution" "website" {
 
   origin {
     origin_id   = "bucket-${aws_s3_bucket.website.id}"
-    domain_name = aws_s3_bucket.website.bucket_regional_domain_name
+    domain_name = aws_s3_bucket.website.website_domain
 
-    s3_origin_config {
-      origin_access_identity = aws_cloudfront_origin_access_identity.website.cloudfront_access_identity_path
+    custom_header {
+      name = "Referer"
+      value = random_password.website_bucket_referer.result
     }
   }
 
