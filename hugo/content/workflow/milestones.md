@@ -13,7 +13,7 @@ Data generating mechanism
 This milestone is reached when you have code that can reproduce all the data generated in the original study.
 
 ### DGM Components
-- A **data frameame** with all simulation scenarios.
+- A **data frame** with all simulation scenarios.
 
 - A **function** that takes all simulation parameters (fixed AND variable) as input and generates data based on that input.
 
