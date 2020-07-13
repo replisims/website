@@ -26,6 +26,11 @@ provider "aws" {
   region = "eu-west-1"
 }
 
+provider "aws" {
+  alias  = "us"
+  region = "us-east-1"
+}
+
 provider "random" {}
 
 
@@ -196,6 +201,7 @@ resource "aws_route53_record" "website_root_ip6" {
 #####  SSL
 
 resource "aws_acm_certificate" "website" {
+  provider                  = aws.us
   domain_name               = local.project_domain
   subject_alternative_names = ["*.${local.project_domain}"]
   validation_method         = "DNS"
@@ -212,6 +218,7 @@ resource "aws_route53_record" "website_cert_validation" {
 }
 
 resource "aws_acm_certificate_validation" "website" {
+  provider                = aws.us
   certificate_arn         = aws_acm_certificate.website.arn
   validation_record_fqdns = [aws_route53_record.website_cert_validation.fqdn]
 }
