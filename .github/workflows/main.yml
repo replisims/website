@@ -4,6 +4,7 @@ on:
   push:
     branches: [master]
   pull_request:
+    branches: [master]
 
 jobs:
   build:
@@ -33,9 +34,9 @@ jobs:
 
     - name: Terraform plan
       working-directory: ./terraform
-      run: terraform plan
+      run: terraform plan -lock=true -input=false -out=.terraform/tfplan -var 'environment=production'
 
     - name: Terraform apply
       if: github.event_name == 'push'
       working-directory: ./terraform
-      run: terraform apply -auto-approve
+      run: terraform apply -lock=true -input=false -auto-approve .terraform/tfplan
