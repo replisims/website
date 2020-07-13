@@ -81,11 +81,12 @@ data "aws_iam_policy_document" "website_bucket" {
       variable = "aws:SecureTransport"
       values   = [true]
     }
-    condition {
-      test     = "Bool"
-      variable = "aws:Referer"
-      values   = [random_password.website_bucket_referer.result]
-    }
+    # TODO re-enable
+    # condition {
+    #   test     = "Bool"
+    #   variable = "aws:Referer"
+    #   values   = [random_password.website_bucket_referer.result]
+    # }
   }
 }
 resource "aws_s3_bucket_policy" "website" {
