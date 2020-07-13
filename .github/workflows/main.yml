@@ -20,16 +20,20 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: Terraform init
+      working-directory: ./terraform
       run: terraform init
 
     - name: Terraform check
+      working-directory: ./terraform
       run: |
         terraform fmt -check
         terraform validate
 
     - name: Terraform plan
+      working-directory: ./terraform
       run: terraform plan
 
     - name: Terraform apply
       if: github.event_name == 'push'
+      working-directory: ./terraform
       run: terraform apply -auto-approve
