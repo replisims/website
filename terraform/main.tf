@@ -36,6 +36,8 @@ locals {
   local_prefix  = "${local.project}-${var.environment}"
   global_prefix = "${local.project}-${var.environment}"
 
+  project_domain = "replisims.org"
+
   tags = {
     Project     = local.project
     Environment = var.environment
@@ -97,7 +99,7 @@ resource "aws_cloudfront_distribution" "website" {
 
   tags = local.tags
 
-  # aliases = [var.domain]
+  aliases = [local.project_domain]
 
   origin {
     origin_id   = "bucket-${aws_s3_bucket.website.id}"
