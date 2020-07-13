@@ -45,8 +45,14 @@ data "aws_iam_policy_document" "website_bucket" {
       type        = "AWS"
       identifiers = [aws_cloudfront_origin_access_identity.website.iam_arn]
     }
-    resources = ["${aws_s3_bucket.website.arn}/*"]
-    actions = ["s3:GetObject"]
+    resources = [
+      aws_s3_bucket.website.arn,
+      "${aws_s3_bucket.website.arn}/*",
+    ]
+    actions = [
+      "s3:GetObject",
+      "s3:ListBucket",
+    ]
     condition {
       test     = "Bool"
       variable = "aws:SecureTransport"
