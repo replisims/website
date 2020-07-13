@@ -104,7 +104,10 @@ resource "aws_cloudfront_distribution" "website" {
 
   tags = local.tags
 
-  aliases = [local.project_domain]
+  aliases = [
+    local.project_domain,
+    "www.${local.project_domain}",
+  ]
 
   origin {
     origin_id   = "bucket-${aws_s3_bucket.website.id}"
