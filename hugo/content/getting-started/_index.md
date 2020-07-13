@@ -28,6 +28,8 @@ Brookhart, M. A., Schneeweiss, S., Rothman, K. J., Glynn, R. J., Avorn, J., & St
 
 Flora, D. B., & Curran, P. J. (2004). An Empirical Evaluation of Alternative Methods of Estimation for Confirmatory Factor Analysis With Ordinal Data. *Psychological Methods*, 9(4), 466–491. https://doi.org/10.1037/1082-989X.9.4.466
 
+Li, C.-H. (2016). Confirmatory factor analysis with ordinal data: Comparing robust maximum likelihood and diagonally weighted least squares. Behavior Research Methods, 48(3), 936–949. https://doi.org/10.3758/s13428-015-0619-7
+
 Pierce, B. L., & Burgess, S. (2013). Efficient Design for Mendelian Randomization Studies: Subsample and 2-Sample Instrumental Variable Estimators. *American Journal of Epidemiology*, 178(7), 1177–1184. https://doi.org/10.1093/aje/kwt084
 
 Rosner, B., Willett, W. C., & Spiegelman, D. (2006). Correction of logistic regression relative risk estimates and confidence intervals for systematic within-person measurement error. *Statistics in Medicine*, 8(9), 1051–1069. https://doi.org/10.1002/sim.4780080905
