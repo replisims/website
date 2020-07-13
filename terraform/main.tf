@@ -57,10 +57,6 @@ resource "aws_s3_bucket" "website" {
   }
 }
 
-# TODO  delete
-resource "aws_cloudfront_origin_access_identity" "website" {
-  comment = "CloudFront OAI for website bucket"
-}
 resource "random_password" "website_bucket_referer" {
   length  = 20
   special = false
@@ -115,6 +111,13 @@ resource "aws_cloudfront_distribution" "website" {
     custom_header {
       name  = "Referer"
       value = random_password.website_bucket_referer.result
+    }
+
+    custom_origin_config {
+      origin_protocol_policy = "https-only"
+      http_port              = "80"
+      https_port             = "443"
+      origin_ssl_protocols   = ["TLSv1.2", "TLSv1"]
     }
   }
 
