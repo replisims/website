@@ -30,6 +30,7 @@ jobs:
         terraform validate
 
     - name: Terraform plan
+      if: github.event_name != 'push'
       working-directory: ./terraform
       run: terraform plan
 
