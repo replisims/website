@@ -17,8 +17,8 @@ terraform {
   required_version = "~> 0.12.16"
 
   required_providers {
-    aws      = "~> 2.55"
-    random   = "~> 2.2"
+    aws    = "~> 2.55"
+    random = "~> 2.2"
   }
 }
 
@@ -32,7 +32,7 @@ provider "random" {}
 #####  Global locals
 
 locals {
-  project = "replisims"
+  project       = "replisims"
   local_prefix  = "${local.project}-${var.environment}"
   global_prefix = "${local.project}-${var.environment}"
 
@@ -100,7 +100,7 @@ resource "aws_cloudfront_distribution" "website" {
   enabled         = true
   is_ipv6_enabled = true
 
-  tags    = local.tags
+  tags = local.tags
 
   # aliases = [var.domain]
 
@@ -109,7 +109,7 @@ resource "aws_cloudfront_distribution" "website" {
     domain_name = aws_s3_bucket.website.website_domain
 
     custom_header {
-      name = "Referer"
+      name  = "Referer"
       value = random_password.website_bucket_referer.result
     }
   }
@@ -136,8 +136,8 @@ resource "aws_cloudfront_distribution" "website" {
       }
     }
 
-    default_ttl      = "60"
-    max_ttl          = "3600"
+    default_ttl = "60"
+    max_ttl     = "3600"
 
     viewer_protocol_policy = "redirect-to-https"
     compress               = true
