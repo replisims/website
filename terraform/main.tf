@@ -154,12 +154,64 @@ resource "aws_cloudfront_distribution" "website" {
   }
 
   viewer_certificate {
-    # TODO  domain cert
-    cloudfront_default_certificate = true
-    ssl_support_method             = "sni-only"
-    minimum_protocol_version       = "TLSv1"
+    acm_certificate_arn      = aws_acm_certificate.website.arn
+    minimum_protocol_version = "TLSv1"
+    ssl_support_method       = "sni-only"
   }
 }
 
 
 #####  DNS
+
+locals {
+  # TODO  bring the Hosted Zone into terraform and reference a resource attribute here
+  project_domain_hosted_zone_id = "Z08462543JWT9S4ES988V"
+}
+
+resource "aws_route53_record" "website_root_ip4" {
+  zone_id = local.project_domain_hosted_zone_id
+  name    = local.project_domain
+  type    = "A"
+
+  alias {
+    name                   = aws_cloudfront_distribution.website.domain_name
+    zone_id                = aws_cloudfront_distribution.website.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
+resource "aws_route53_record" "website_root_ip6" {
+  zone_id = local.project_domain_hosted_zone_id
+  name    = local.project_domain
+  type    = "AAAA"
+
+  alias {
+    name                   = aws_cloudfront_distribution.website.domain_name
+    zone_id                = aws_cloudfront_distribution.website.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
+
+#####  SSL
+
+resource "aws_acm_certificate" "website" {
+  domain_name               = local.project_domain
+  subject_alternative_names = ["*.${local.project_domain}"]
+  validation_method         = "DNS"
+  tags                      = local.tags
+}
+
+resource "aws_route53_record" "website_cert_validation" {
+  zone_id = local.project_domain_hosted_zone_id
+  name    = aws_acm_certificate.website.domain_validation_options.0.resource_record_name
+  type    = aws_acm_certificate.website.domain_validation_options.0.resource_record_type
+
+  records = [aws_acm_certificate.website.domain_validation_options.0.resource_record_value]
+  ttl     = 60
+}
+
+resource "aws_acm_certificate_validation" "website" {
+  certificate_arn         = aws_acm_certificate.website.arn
+  validation_record_fqdns = [aws_route53_record.website_cert_validation.fqdn]
+}
