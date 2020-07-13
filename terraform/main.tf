@@ -1,3 +1,16 @@
+#####  Backend
+
+terraform {
+  backend "remote" {
+    organization = "replisims"
+
+    workspaces {
+      name = "website-production"
+    }
+  }
+}
+
+
 #####  Plugins and versions
 
 terraform {
