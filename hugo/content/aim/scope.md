@@ -1,25 +1,41 @@
 +++
 title = "Scope"
 weight = 15
-
 +++
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+.column {
+  float: left;
+  width: 50%;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 We aim for this project to be a great learning experience and a chance for international and interdisciplinary collaboration with like-minded researchers.
 
 Depending on your time, current skill-level and enthusiasm and the different complexities of a given project  there is a broad spectrum of what you might be able to contribute.
 
 ## Replication
-### <i class="far fa-chart-bar"></i> Basic
 
+<div class="row">
+  <div class="column">
+
+### Basic
 - Code
 	* That runs
-	* In a github report
+	* In a github repository
 - Results
-	* same representation as the original publication
+	* Relatable to original
 - Documentation
-	* extracted information
-	* replicator degrees of freedom
+	* Extracted information (& source)
+	* Replicator degrees of freedom
+	</div>
+
+<div class="column">
 
 ### Extra
 
@@ -29,6 +45,12 @@ Depending on your time, current skill-level and enthusiasm and the different com
 - Shiny App
 - Unit tests
 - ...
+
+ </div>
+</div>
+
+
+
 
 > Check out the [resources section](#resources) to explore the options.
 

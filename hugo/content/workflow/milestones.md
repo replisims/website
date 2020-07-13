@@ -12,10 +12,10 @@ Data generating mechanism
 
 This milestone is reached when you have code that can reproduce all the data generated in the original study.
 
-Components:
-A data frameame with all simulation scenarios.
+### DGM Components
+- A **data frameame** with all simulation scenarios.
 
-A function that takes all simulation parameters as input and generates data based on that input.
+- A **function** that takes all simulation parameters (fixed AND variable) as input and generates data based on that input.
 
 
 
@@ -27,25 +27,32 @@ Or compare multiple different methods applied to the data.
 This milestone is reached  when you have implemented the method in accordance with the specifications in the original study and can apply it to the data you generated.
 
 
-## Performance
+## Performance measures
 
 Performance measures are the outcomes of a simulation study. 
 This milestone is reached when you have implemented the performance measures for each method of your simulation.
 
 
-## Result visualization/aggregation
+## Results 
 
-The results havve to presented. This can be done in either the original form or in another format.
-If you chose an improved result presentation it still has to be possible to compare the results of teh replication to the original.
-This milestoneis completed when all the original results are represented in tables, figures or other format.
+The results have to compiled. In a basic version your code creates an object where the results can be found in any form that can easily be related to the original publication.
+You can also represent your results in a more "printable" manner i.e. table or figure form.
+You are hereby not bound to the original representation in the manuscript.
+If you chose an improved result presentation it still has to be possible to compare the results of the replication to the original.
+This milestone is completed when all the original results are represented in any format.
 
 ## Package
 
 When all individual parts are completed you have to ensure that the "whole" can be run and easily transported between systems.
 The easierst way to accomplish this is with a package.
-This milestone is reached when all project components can be transfererred and rerun.
+This milestone is reached when all project components can be transfererred and rerun by an independent reviewer.
 
-## Verification Report
+## Documentation
 
-All information that you have extracted from the original manuscript and the way it was translated to code must be documented.
+All information that you have extracted from the original manuscript must be documented.
 Furthermore, replicator degrees of freedom i.e. any decisions that had to be made by the replicators have to be justified.
+
+You can get a doi for your endproduct via zenodo and add your part to the project's zenodo community:  
+https://zenodo.org/communities/replisims/
+
+<iframe src="https://zenodo.org/communities/codecheck". ,</iframe>

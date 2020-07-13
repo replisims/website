@@ -1,7 +1,7 @@
-baseURL = "http://example.org/"
+baseURL = "https://replisims.org/"
 languageCode = "en-us"
 title = "RepliSims Project"
-theme = "learn"
+theme = ["learn", "book"]
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
@@ -20,3 +20,6 @@ name = "<i class='fab fa-gitter'></i> Gitter community"
 identifier = "gitter"
 url = "https://gitter.im/replisims/community"
 weight = 20
+
+[markup.goldmark.renderer]
+unsafe = true
