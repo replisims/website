@@ -112,6 +112,11 @@ resource "aws_cloudfront_distribution" "website" {
       name  = "Referer"
       value = random_password.website_bucket_referer.result
     }
+
+    # TODO  delete
+    s3_origin_config {
+      origin_access_identity = "origin-access-identity/cloudfront/E17UONB9OE984T"
+    }
   }
 
   default_root_object = "index.html"
