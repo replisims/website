@@ -20,6 +20,15 @@ It can, however, be necessary to familiarize oneself with the software originall
 Yes, absolutely. We do, however, recommend that you consult a peer, supervisor (or us) regarding feasibility.
 Likewise, if you lack experience with any of the methods covered by the suggested replication candidates, we can help you locate a more suitable simulation study investigating a method you feel more comfortable with.
 
+## I prefer working alone, do I have to be part of a pair?
+Well. Mostly not but maybe somewhat. 
+As a primary replicator you can work as independently as you want to. 
+However, you might get stuck or just need somebody to bounce of an idea or double check your decisions. 
+That is what the co-pilot can be for. 
+You could of course theoretically always ask us but your co-pilot has in depth read the study and might help you more efficiently.
+If you work more efficiently alone the ideal way to go would just be to openly communicate that to a co-pilot so they know that it is nothing personal and no reason to get worried if they don't hear from you in a while.
+If you can literally make it all the way through the replcation alone your co-pilot could then simply become the reviewer. 
+
 ## When is the deadline?
 The individual replications have no hard deadlines. 
 However, we conceptualized this as a summer project. 
