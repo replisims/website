@@ -2,15 +2,31 @@
 title = "Roles"
 weight = 15
 +++
-[]<a id="role"></a>
+<style>
+.column {
+  float: left;
+  width: 50%;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<div class="row">
+  <div class="column">
+  
 ## Primary replicator
 
 - Read the paper
 - Draft a  code structure
 - Write the code
 - Document the process
-
+</div>	
+<div class="column">
 
 ## Co-pilot
 
@@ -22,7 +38,9 @@ weight = 15
 - Aid with coding if you have complementing skills
 - Assist with dirty work (e.g. code formatting, documentation)
 - Follow-up on progress
-
+ </div>
+ </div>
+ 
 ## Consultant
 
 ### Do you have expertise with ... 
@@ -32,6 +50,8 @@ weight = 15
 - Meta-analysis
 - ...
 
+<div class="row">
+  <div class="column">
 
 ### ... certain R packages?
 
@@ -46,7 +66,8 @@ weight = 15
 - simsem
 - lavaan
 - ...
-
+</div>	
+<div class="column">
 
 ### ...certain technologies?
 
@@ -59,6 +80,8 @@ weight = 15
 - Markdown
 - Latex
 - ...
-
-ë
+ </div>
+ </div>
+ 
+ Let us know so we can help each other out.
 
