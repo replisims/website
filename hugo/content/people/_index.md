@@ -56,14 +56,11 @@ ___
 
 <div style="text-align: center;">
 
-![](/img/kim.png?width=170px)
+![](/img/kim.jpg?width=170px)
 [Kim Luijken](https://www.lumc.nl/org/klinische-epidemiologie/medewerkers/Kim?setlanguage=English&setcountry=en)
  </div>
  </div>
- <div class="column">
 
-&nbsp;
- </div>
 </div>
 
 
