@@ -7,21 +7,21 @@ pre = "<b></b>"
 
 ___
 
-## Do I have to work in R?
+### Do I have to work in R?
 No, using R is not mandatory. However, two aspects have to be kept in mind when choosing a different software solution.
 (1) You will have to find someone that is familiar with the language you would like to use. 
-(2) The idea of replicability being closely related to open science calls for an implementation that itself is openly accessible i.e. an open source tool (see also our [replication principles](/aim)).
+(2) The idea of replicability being closely related to open science calls for an implementation that itself is openly accessible i.e. an open source tool (see also our [replication principles](/aim/#replication-principles)).
  
-## Does the replication have to be implemented in the same software environment as the original?
-No. In theory the study results should not depend on the software environment used for the implementation. We strive for a replication that is openly accessible and reproducible i.e. implemented with open source tools [replication principles](/aim)).
+### Does the replication have to be implemented in the same software environment as the original?
+No. In theory the study results should not depend on the software environment used for the implementation. We strive for a replication that is openly accessible and reproducible i.e. implemented with open source tools [replication principles](/aim/#replication-principles)).
 It can, however, be necessary to familiarize oneself with the software originally used to gain a better understanding of the internals of the algorithms that were likely used.
 
-## Can I replicate a simulation study that is not on the list?
+### Can I replicate a simulation study that is not on the list?
 Yes, absolutely. We do, however, recommend that you consult a peer, supervisor (or us) regarding feasibility.
 Likewise, if you lack experience with any of the methods covered by the suggested replication candidates, we can help you locate a more suitable simulation study investigating a method you feel more comfortable with.
 
-## I prefer working alone, do I have to be part of a pair?
-Well. Mostly not but maybe somewhat. 
+### I prefer working alone, do I have to be part of a pair?
+Well, not necessarily but maybe somewhat. 
 As a primary replicator you can work as independently as you want to. 
 However, you might get stuck or just need somebody to bounce of an idea or double check your decisions. 
 That is what the co-pilot can be for. 
@@ -29,7 +29,7 @@ You could of course theoretically always ask us but your co-pilot has in depth r
 If you work more efficiently alone the ideal way to go would just be to openly communicate that to a co-pilot so they know that it is nothing personal and no reason to get worried if they don't hear from you in a while.
 If you can literally make it all the way through the replcation alone your co-pilot could then simply become the reviewer. 
 
-## When is the deadline?
+### When is the deadline?
 The individual replications have no hard deadlines. 
 However, we conceptualized this as a summer project. 
 This has the advantage of some focused collective momentum and availability. 
