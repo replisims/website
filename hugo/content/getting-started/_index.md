@@ -41,10 +41,11 @@ Vittinghoff, E., & McCulloch, C. E. (2007). Relaxing the Rule of Ten Events per 
 
 > The original manuscript are in the [private repository](https://github.com/replisims/private) to not get into trouble with copyright issues.
 
+> You can also pick a different simulation study not on the list. Please, send us an email should you wish to do so.
 ___
 
 ## Pick a role
-Decide on your [role](#role).
+Decide on your [role](/getting-started/roles).
 ___
 
 ## Find a partner
