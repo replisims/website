@@ -13,8 +13,9 @@ ___
 * Get a [Zenodo account](https://zenodo.org/signup/)
 
 
-Please note that it's very important to us that we maintain a positive and supportive environment for everyone who wants to participate. 
+<!-- Please note that it's very important to us that we maintain a positive and supportive environment for everyone who wants to participate. 
 When you join us we ask that you follow our [code of conduct](#coc) in all interactions both on and offline.
+-->
 
 <!-- Add link to code of conduct-->
 ___
