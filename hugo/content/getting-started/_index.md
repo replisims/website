@@ -37,7 +37,7 @@ Rosner, B., Willett, W. C., & Spiegelman, D. (2006). Correction of logistic regr
 
 Rhemtulla, M., Brosseau-Liard, P. É., & Savalei, V. (2012). When can categorical variables be treated as continuous? A comparison of robust continuous and categorical SEM estimation methods under suboptimal conditions. Psychological Methods, 17(3), 354–373. https://doi.org/10.1037/a0029315
 
-~~Vittinghoff, E., & McCulloch, C. E. (2007). Relaxing the Rule of Ten Events per Variable in Logistic and Cox Regression. *American Journal of Epidemiology*, 165(6), 710–718. https://doi.org/10.1093/aje/kwk052~~ (Replicator and copilot assigned)
+~~Vittinghoff, E., & McCulloch, C. E. (2007). Relaxing the Rule of Ten Events per Variable in Logistic and Cox Regression. *American Journal of Epidemiology*, 165(6), 710–718. https://doi.org/10.1093/aje/kwk052 ~~ (Replicator and copilot assigned)
 
 > The original manuscript are in the [private repository](https://github.com/replisims/private) to not get into trouble with copyright issues.
 
