@@ -25,7 +25,7 @@ ___
 
 Bradburn, M. J., Deeks, J. J., Berlin, J. A., & Russell Localio, A. (2007). Much ado about nothing: A comparison of the performance of meta-analytical methods with rare events. *Statistics in Medicine*, 26(1), 53–77. https://doi.org/10.1002/sim.2528
 
-Brookhart, M. A., Schneeweiss, S., Rothman, K. J., Glynn, R. J., Avorn, J., & Stürmer, T. (2006). Variable Selection for Propensity Score Models. *American Journal of Epidemiology*, 163(12), 1149–1156. https://doi.org/10.1093/aje/kwj149 (Primary replicator assigned still possible to join as a co-pilot)
+<s>Brookhart, M. A., Schneeweiss, S., Rothman, K. J., Glynn, R. J., Avorn, J., & Stürmer, T. (2006). Variable Selection for Propensity Score Models. *American Journal of Epidemiology*, 163(12), 1149–1156. https://doi.org/10.1093/aje/kwj149 </s> (Replicator and copilot assigned)
 
 Flora, D. B., & Curran, P. J. (2004). An Empirical Evaluation of Alternative Methods of Estimation for Confirmatory Factor Analysis With Ordinal Data. *Psychological Methods*, 9(4), 466–491. https://doi.org/10.1037/1082-989X.9.4.466
 
