@@ -35,7 +35,7 @@ Pierce, B. L., & Burgess, S. (2013). Efficient Design for Mendelian Randomizatio
 
 Rosner, B., Willett, W. C., & Spiegelman, D. (2006). Correction of logistic regression relative risk estimates and confidence intervals for systematic within-person measurement error. *Statistics in Medicine*, 8(9), 1051–1069. https://doi.org/10.1002/sim.4780080905
 
-Rhemtulla, M., Brosseau-Liard, P. É., & Savalei, V. (2012). When can categorical variables be treated as continuous? A comparison of robust continuous and categorical SEM estimation methods under suboptimal conditions. Psychological Methods, 17(3), 354–373. https://doi.org/10.1037/a0029315
+Rhemtulla, M., Brosseau-Liard, P. É., & Savalei, V. (2012). When can categorical variables be treated as continuous? A comparison of robust continuous and categorical SEM estimation methods under suboptimal conditions. Psychological Methods, 17(3), 354–373. https://doi.org/10.1037/a0029315 (Primary replicator assigned still possible to join as a co-pilot)
 
 <s>Vittinghoff, E., & McCulloch, C. E. (2007). Relaxing the Rule of Ten Events per Variable in Logistic and Cox Regression. *American Journal of Epidemiology*, 165(6), 710–718. https://doi.org/10.1093/aje/kwk052 </s> (Replicator and copilot assigned)
 
