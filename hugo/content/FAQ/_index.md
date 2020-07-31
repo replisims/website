@@ -29,6 +29,12 @@ You could of course theoretically always ask us but your co-pilot has in depth r
 If you work more efficiently alone the ideal way to go would just be to openly communicate that to a co-pilot so they know that it is nothing personal and no reason to get worried if they don't hear from you in a while.
 If you can literally make it all the way through the replcation alone your co-pilot could then simply become the reviewer. 
 
+### How do I get access to the github organization?
+If you provide Anna or Kim with your github user name we can invite you to the [replisims github organization](https://github.com/replisims).
+Github will then send you an email with an invitation to join. 
+If you did not receive such an email it might be a good idea to check which email address is associated with your github accound and/or check the spam filter.
+
+
 ### When is the deadline?
 The individual replications have no hard deadlines. 
 However, we conceptualized this as a summer project. 
