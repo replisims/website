@@ -32,8 +32,10 @@ If you can literally make it all the way through the replcation alone your co-pi
 ### How do I get access to the github organization?
 If you provide Anna or Kim with your github user name we can invite you to the [replisims github organization](https://github.com/replisims).
 Github will then send you an email with an invitation to join. 
-If you did not receive such an email it might be a good idea to check which email address is associated with your github accound and/or check the spam filter.
+If you did not receive such an email it might be a good idea to check which email address is associated with your github account and/or check the spam filter.
 
+### Should I contact the author to ask for code or in case of uncertainties.
+Whether or not you contact the original study 
 
 ### When is the deadline?
 The individual replications have no hard deadlines. 
