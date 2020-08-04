@@ -35,7 +35,14 @@ Github will then send you an email with an invitation to join.
 If you did not receive such an email it might be a good idea to check which email address is associated with your github account and/or check the spam filter.
 
 ### Should I contact the author to ask for code or in case of uncertainties.
-Whether or not you contact the original study 
+Whether or not you contact the original study author to ask for code or additional information is up to you.
+If you decide to do so, please, carefully archive the correspondence as well as all materials received. 
+However, keep in mind that waiting for a reply might take a while and require several reminders/attempts in searching for current contact data. 
+We hence advise that you either contact the authors right before the replication or try implementing the replication independently and contact them after your best attempt.
+An exception might be if the manuscript explicitly refers to a simulation protocol or supplemental materials but these cannot be obtained (e.g. due to a broken link).
+Should your replication attempt result in large deviations from the original, 
+and those discrepancies remain after thorough review, 
+we will contact the original author before publication.
 
 ### When is the deadline?
 The individual replications have no hard deadlines. 
