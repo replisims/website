@@ -20,6 +20,8 @@ Ebook Hadley Whickham
 https://r-pkgs.org/
 
 ### Research Compendium
+Marwick, B., Boettiger, C., & Mullen, L. (2018). Packaging data analytical work reproducibly using R (and friends). The American Statistician 72(1), 80-88. https://doi.org/10.1080/00031305.2017.1375986  
+
 https://github.com/benmarwick/rrtools  
 https://github.com/annakrystalli/rrtools-repro-research  
 
