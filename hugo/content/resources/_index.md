@@ -50,6 +50,9 @@ https://r-pkgs.org/git.html
 Happy git with R - Jenny Bryan, the STAT 545 TAs, Jim Hester  
 https://happygitwithr.com/  
 
+### CRediT (Contributor Roles Taxonomy)
+http://credit.niso.org/
+
 
 <!--- Research compendium
 - Simulation
