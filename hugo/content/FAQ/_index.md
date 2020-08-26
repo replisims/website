@@ -4,7 +4,6 @@ chapter = false
 weight = 19
 pre = "<b></b>"
 +++
-
 ___
 
 ### Do I have to work in R?
@@ -52,4 +51,11 @@ A new semester usually comes with new projects and new responsibilities.
 Ideally, your replication is in a state where it can be handed over before you are buried in other work.
 Since collaborators in this project come from different parts of the world with different holiday seasons and academic years we will be working on slightly different timelines.
 
+### What if my copilot and I contribute a different amount of work to the replication?
+We encourage every collaborator to document their role in the replication process. 
+The CRediT (Contributor Role Taxonomy) is one possibility to document authorship roles.
+It suggests gradiants of *lead*, *equal* and *supporting* for 14 different contributor roles
+(http://credit.niso.org/).
+Apart from this formal way of ensuring fair role documentation it should be acknowledged that quantity does not equal quality.
+Fewer lines of code do not necessarily equate to less work. 
 
