@@ -6,6 +6,8 @@ pre = "<b></b>"
 +++
 ___
 
+## Questions Regarding the Implementation of the Replication
+
 ### Do I have to work in R?
 No, using R is not mandatory. However, two aspects have to be kept in mind when choosing a different software solution.
 (1) You will have to find someone that is familiar with the language you would like to use. 
@@ -14,6 +16,34 @@ No, using R is not mandatory. However, two aspects have to be kept in mind when 
 ### Does the replication have to be implemented in the same software environment as the original?
 No. In theory the study results should not depend on the software environment used for the implementation. We strive for a replication that is openly accessible and reproducible i.e. implemented with open source tools [replication principles](/aim/#replication-principles)).
 It can, however, be necessary to familiarize oneself with the software originally used to gain a better understanding of the internals of the algorithms that were likely used.
+
+### Should I contact the author to ask for code or in case of uncertainties.
+Whether or not you contact the original study author to ask for code or additional information is up to you.
+If you decide to do so, please, carefully archive the correspondence as well as all materials received. 
+However, keep in mind that waiting for a reply might take a while and require several reminders/attempts in searching for current contact data. 
+We hence advise that you either contact the authors right before the replication or try implementing the replication independently and contact them after your best attempt.
+An exception might be if the manuscript explicitly refers to a simulation protocol or supplemental materials but these cannot be obtained (e.g. due to a broken link).
+Should your replication attempt result in large deviations from the original, 
+and those discrepancies remain after thorough review, 
+we will contact the original author before publication.
+
+### Can I improve the original study?
+Yes, and no. If you think the implementation of the original simulation does not correspond to the state of the art and can be improved you are very welcome to do so. 
+However, this improvement should be implemented in the form of an extension. 
+Your primary goal is to reproduce the original results based on the details provided by the authors.
+You can (in a second step) implement improvements and rerun the simulation.
+The results of your improvement can be reported alongisde the original replication.
+Sometimes the line between improving and reproducing is admittedly somewhat blurred.
+Imagine the following scenario: The authors report that they have simulated data with a mean of 2. 
+From some result figure, however, it is evident that the mean cannot possibly have been anywhere near 2.
+Unless you have reason to believe that the 2 is a typo (and it should have been 3 or 0.2) or have any other 
+explanation on how the discrepency of the text and the figure came to be you have no other choice but to "improve"
+the original simulation by doing what the authors intended and simulate the data with a mean of 2.
+
+### Could you define replicator degrees of freedom in the context of this project?
+
+
+## Questions Regarding Project Organization
 
 ### Can I replicate a simulation study that is not on the list?
 Yes, absolutely. We do, however, recommend that you consult a peer, supervisor (or us) regarding feasibility.
@@ -32,16 +62,6 @@ If you can literally make it all the way through the replcation alone your co-pi
 If you provide Anna or Kim with your github user name we can invite you to the [replisims github organization](https://github.com/replisims).
 Github will then send you an email with an invitation to join. 
 If you did not receive such an email it might be a good idea to check which email address is associated with your github account and/or check the spam filter.
-
-### Should I contact the author to ask for code or in case of uncertainties.
-Whether or not you contact the original study author to ask for code or additional information is up to you.
-If you decide to do so, please, carefully archive the correspondence as well as all materials received. 
-However, keep in mind that waiting for a reply might take a while and require several reminders/attempts in searching for current contact data. 
-We hence advise that you either contact the authors right before the replication or try implementing the replication independently and contact them after your best attempt.
-An exception might be if the manuscript explicitly refers to a simulation protocol or supplemental materials but these cannot be obtained (e.g. due to a broken link).
-Should your replication attempt result in large deviations from the original, 
-and those discrepancies remain after thorough review, 
-we will contact the original author before publication.
 
 ### When is the deadline?
 The individual replications have no hard deadlines. 
