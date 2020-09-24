@@ -41,7 +41,65 @@ explanation on how the discrepency of the text and the figure came to be you hav
 the original simulation by doing what the authors intended and simulate the data with a mean of 2.
 
 ### Could you define replicator degrees of freedom in the context of this project?
+Replicator degrees of freedom in the context of our "exact replicatioin" are any decisions the replicators have to make.
+Any information from the original article that is ambiguous or vague and hence needs to be interpreted by the replicators.
 
+### How much should the replicators "guesstimate" before declaring the replication attempt as impossible?
+It depends. If there are some sensible guesstimates available that can easily be implemented the replicators can do so.
+Sensible guestimates can be obtained from:
+- Earlier papers by the same authors  
+- Similar studies referenced in the original article  
+- Common "defaults" (e.g. and alpha level of .95, commonly used cut-off values, standard normally distributed predictors)  
+- Default settings in the compuational environment the authors used  
+
+If the replicators have no such clues for what the authors might have implemented there is no shame in declaring a certain scenario (or the entire study)
+as unreplicable. In that case it should be clearly described what pieces of information are missing.
+
+### If information in the original study is ambigous shoul the replication be implemented in multiple different ways?
+It depends. In a first step the replication team should decide on which interpretation they deem the most likely and provide some argument for this assessment.
+In a secon step they could gauge the effort of implementing any alternative implementation. 
+Factors such as coding effort as well as computational costs come into play here.
+If rerunning the entire simulation with an alternative implementation takes 3 months to run it might not be the effort. 
+Similarly if one alternative interpretation has a rippling effect and leads to a multiverse of 240 different implementations.
+If an alternative interpretation simply involves changing one number and rerunning code that takes one hour it might be worth the effort.
+
+## Questions Regarding the Replication Report
+
+### What should I include in the Replication Report?
+Roughly speaking the replication report should include the following information:
+
+- Reference of the original article
+- All sources of information used for the replication
+- A summary of the replication process
+- Elaboration on any replicator degrees of freedom
+- Reference to the code
+- A comparison of results
+- A short discussion summarizing the overall replicability
+
+Further inspiration can be obtained from a RMarkdown template which I created for this project.
+It can be installed as following:  
+`devtools::install_github("replisims/RepliSimReport")`  
+If you then create a new Rmarkdownfile via  
+
+`File -> New File -> RMarkdown`
+and chose `"From Template"`
+you should be given the Option `"RepliSim Report (pdf) {RepliSimReport}"`
+(Sometimes it doesn't show up immediately in which case you'll need to restart RStudio.)
+
+This template provides you with some guidance for the replication report.
+It gives you an idea what *could* be reported not was *has to* be reported. 
+That can vary between replications and the issues faced.
+
+You can also check out the preliminary replication report of my replication of Peters et al 2006 on github https://github.com/replisims/peters-2016/blob/wip/analysis/report/report.pdf.
+
+### Can I report the original figures and tables for comparison?
+Visual comparison of results might be easiert obtained by simply providing the original figures next to the replicated results.
+This may or may not be fair use of the copy righted material. 
+I will contact a librarian to obtain some guidance for our specific cases. 
+
+### Where should I publish the Replication Report? 
+Once it is close to final you can give it a doi and include it in the zenodo community of the RepliSims project.
+Zenodo allows multiple versions so you can update the report if you should spot any mistakes after publication.
 
 ## Questions Regarding Project Organization
 
