@@ -65,5 +65,17 @@ ___
 
 
 ## Contributors
+<div class="row">
+  <div class="column">
 
+
+
+![](/img/tristan.jpg?width=170px)
+<div style="text-align: center;">
+
+[Tristan Tibbe](https://www.akmontoya.com/qrclab)
+</div>
+</div>	
+
+</div>
 &nbsp;
